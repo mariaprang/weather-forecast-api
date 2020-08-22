@@ -48,6 +48,7 @@ function sendWeatherInfoRequest(url) {
         mainInfo.feelslike,
         mainInfo.humidity
       );
+      console.log(weatherObject);
       return displayInfo(weatherObject);
     }
   };
@@ -61,8 +62,12 @@ function displayInfo(info) {
   weatherIcon.src = info.getImageSrc();
 
   var temp = document.getElementById("temp-row");
-  temp.innerHTML = "Temperature: " + info.temp;
+  temp.innerHTML = info.temp;
 
-  var feelsLike = document.getElementById("feels-like-row");
-  feelsLike.innerHTML = "Feels like: " + info.feelsLike;
+  // var feelsLike = document.getElementById("feels-like-row");
+  // feelsLike.innerHTML = "Feels like: " + info.feelsLike;
+
+  var cityName = document.getElementById("city-name");
+  cityName.innerHTML = info.city;
 }
+getCityInfo("London");

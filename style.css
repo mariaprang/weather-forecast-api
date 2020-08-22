@@ -1,0 +1,36 @@
+body {
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2)); */
+  font-family: "Montserrat", sans-serif;
+}
+
+.centered {
+  width: fit-content;
+  margin: 5% auto;
+}
+
+.weather-box {
+  width: 40%;
+  height: 300px;
+  margin: 5% auto;
+  border: 2px solid white;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.right {
+  width: 35%;
+}
+
+.left {
+  width: 65%;
+}
+
+.temp-row {
+  font-size: 2em;
+}

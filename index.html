@@ -5,20 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <!-- <body onload="getCityInfo('New York');"> -->
 
 <body>
-  <div id="container">
+  <div id="container" class="container">
     <div class="centered">
       Search city: <input type="text" id="city-field">
       <button onclick="getCityInfo();">Search city</button>
     </div>
 
-    <div id="main-info">
-      <img src="" id="weather-icon">
-      <div id="temp-row"></div>
-      <div id="feels-like-row"></div>
+    <div id="main-info" class="weather-box">
+      <!-- 
+     
+      <div id="feels-like-row"></div> -->
+
+      <div class="row">
+        <div class="left">
+          <div id="city-name" class="city"> </div>
+          <div id="temp-row" class="temp-row"></div>
+        </div>
+        <div class="right">
+          <img src="" id="weather-icon">
+        </div>
+      </div>
     </div>
   </div>
 
