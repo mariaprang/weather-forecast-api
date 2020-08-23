@@ -6,10 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="style.css" type="text/css">
-  <link rel="stylesheet" href="fontawesome/all.css" type="text/css">
-  <link rel="stylesheet" href="fontawesome/fontawesome.css" type="text/css">
-
-  <link rel="stylesheet" href="fontawesome/solid.css" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <!-- <body onload="getCityInfo('New York');"> -->
@@ -17,7 +13,7 @@
 <body>
   <div id="container" class="container">
     <div class="centered">
-      <input type="text" id="city-field" placeholder="Search city...">
+      Search city: <input type="text" id="city-field">
       <button onclick="getCityInfo();">Search city</button>
     </div>
 
@@ -28,30 +24,11 @@
 
       <div class="row">
         <div class="left">
-          <div id="date" class="date"> </div>
           <div id="city-name" class="city"> </div>
           <div id="temp-row" class="temp-row"></div>
         </div>
         <div class="right">
           <img src="" id="weather-icon">
-        </div>
-      </div>
-
-      <div class="row details">
-        <div class="description row">
-          <div class="description-text" id="description-text"></div>
-        </div>
-        <div class="humidity row" id="humidity-wrap">
-          <i class="fas fa-tint"></i>
-          <div class="humidity-text" id="humidity-text"></div>
-        </div>
-        <div class="wind row" id="wind-wrap">
-          <i class="fas fa-wind"></i>
-          <div class="wind-text" id="wind-text"></div>
-        </div>
-        <div class="feels-like row" id="feels-like-wrap">
-          <i class="fas fa-temperature-low"></i>
-          <div class="feels-text" id="feels-text"></div>
         </div>
       </div>
     </div>

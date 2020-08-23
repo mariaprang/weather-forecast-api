@@ -1,5 +1,5 @@
 body {
-  background-image: url("img/background.jpg");
+  background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(70, 67, 67, 0.8)), url("img/background.jpg");
   background-repeat: no-repeat;
   /* background: linear-gradient(rgba(0, 0, 0, 0.2)); */
   font-family: "Montserrat", sans-serif;
@@ -33,4 +33,40 @@ body {
 
 .temp-row {
   font-size: 2em;
+}
+
+input {
+  -webkit-appearance: none !important;
+  box-shadow: none !important;
+}
+
+::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+input[type="text"] {
+  width: 350px;
+  padding: 2px 5px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+input:not([type="image" i]) {
+  box-sizing: none !important;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.description-text,
+.humidity,
+.wind,
+.feels-like {
+  display: none;
 }
