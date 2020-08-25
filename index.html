@@ -18,7 +18,7 @@
   <div id="container" class="container">
     <div class="centered">
       <input type="text" id="city-field" placeholder="Search city...">
-      <button onclick="getCityInfo();">Search city</button>
+      <button onclick="getCityInfo();" class="search-button">Search city</button>
     </div>
 
     <div id="main-info" class="weather-box">
@@ -38,18 +38,18 @@
       </div>
 
       <div class="row details">
-        <div class="description row">
+        <div class="description row info">
           <div class="description-text" id="description-text"></div>
         </div>
-        <div class="humidity row" id="humidity-wrap">
+        <div class="humidity row info" id="humidity-wrap">
           <i class="fas fa-tint"></i>
           <div class="humidity-text" id="humidity-text"></div>
         </div>
-        <div class="wind row" id="wind-wrap">
+        <div class="wind row info" id="wind-wrap">
           <i class="fas fa-wind"></i>
           <div class="wind-text" id="wind-text"></div>
         </div>
-        <div class="feels-like row" id="feels-like-wrap">
+        <div class="feels-like row info" id="feels-like-wrap">
           <i class="fas fa-temperature-low"></i>
           <div class="feels-text" id="feels-text"></div>
         </div>

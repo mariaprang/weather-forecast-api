@@ -95,6 +95,7 @@ function displayInfo(info) {
 }
 
 function showAll() {
+  document.getElementById("main-info").style.border = "2px solid white";
   document.getElementById("description-text").style.display = "flex";
   document.getElementById("feels-like-wrap").style.display = "flex";
   document.getElementById("humidity-wrap").style.display = "flex";
